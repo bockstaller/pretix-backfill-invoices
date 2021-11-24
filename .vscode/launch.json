@@ -29,6 +29,21 @@
             "django": true
         },
         {
+            "name": "Pretix: Manage.py",
+            "type": "python",
+            "request": "launch",
+            "program": "./manage.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/../pretix/src",
+            "args": [
+                "backfill_invoices",
+                "test",
+                "testevent",
+                "--dry-run"
+            ],
+            "django": true
+        },
+        {
             "name": "Pretix: Celery",
             "type": "python",
             "request": "launch",
